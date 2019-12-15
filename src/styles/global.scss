@@ -1,0 +1,24 @@
+// COLORS START
+$grass-green: #06bdbb;
+$hozdide-red: #dd1d51;
+$hozdide-grey: #333438;
+// COLORS END
+
+// FONT START
+@font-face {
+  font-family: 'hozdide';
+  src: url('../../static/fonts/gotham/GothamRoundedBook_21018.ttf')
+    format('truetype');
+}
+// FONT END
+
+// GLOBAL STYLES START
+html {
+  color: $grass-green;
+  font-family: 'hozdide';
+}
+// GLOBAL STYLES END
+
+// RESPONSIVE START
+
+// RESPONSIVE END
