@@ -1,0 +1,22 @@
+@import '../styles/global.scss';
+
+.topnav {
+  display: inline;
+  a {
+    float: right;
+    padding: 0 16px;
+
+    &:hover {
+      background-color: $hozdide-grey;
+      color: white;
+    }
+
+    &:active {
+      background-color: $hozdide-red;
+    }
+  }
+
+  &_logo {
+    float: left;
+  }
+}
