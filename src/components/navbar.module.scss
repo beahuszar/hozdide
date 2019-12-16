@@ -1,24 +1,32 @@
 @import '../styles/global.scss';
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
+  .navbar {
+    position: relative;
+    list-style: none;
 
-  .hamburger {
-    text-align: right;
-    .side_menu {
+    input[type='checkbox'] {
       display: none;
+
+      &:checked ~ .navbar___items {
+        display: block;
+      }
     }
 
-    & input[type='checkbox'] {
+    &___hamburger {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10000;
+      cursor: pointer;
+    }
+
+    &___items {
+      position: absolute;
+      text-align: right;
+      color: $hozdide-grey;
       display: none;
-      &:checked {
-        & ~ .side_menu {
-          display: block;
-        }
-      }
+      right: 0;
     }
   }
 }
