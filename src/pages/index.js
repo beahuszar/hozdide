@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from '../components/navbar';
 
 export default () => (
-  <div className="ui container">
+  <div>
     <NavBar />
     <div>Hello world!</div>
   </div>
