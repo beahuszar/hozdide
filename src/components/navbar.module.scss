@@ -10,6 +10,9 @@
 
       &:checked ~ .navbar___items {
         display: block;
+        @media #{$tablet-view} {
+          display: inline-flex;
+        }
       }
     }
 
@@ -19,14 +22,20 @@
       right: 0;
       z-index: 10000;
       cursor: pointer;
+      @media #{$tablet-view} {
+        display: none;
+      }
     }
 
     &___items {
       position: absolute;
       text-align: right;
-      color: $hozdide-grey;
       display: none;
       right: 0;
+
+      @media #{$tablet-view} {
+        display: inline-flex;
+      }
     }
   }
 }

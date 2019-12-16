@@ -8,7 +8,7 @@ export default () => (
     <nav>
       <ul className={styles.navbar}>
         <FaDog />
-        <label for="checkbox" className={styles.navbar___hamburger}>
+        <label htmlFor="checkbox" className={styles.navbar___hamburger}>
           <FaBars />
         </label>
         <input type="checkbox" id="checkbox" />
