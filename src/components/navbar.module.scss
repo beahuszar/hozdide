@@ -6,17 +6,7 @@
   list-style-type: none;
   padding: 0;
 
-  /* .hamburger input[type='checkbox'],
-  .hamburger .side_menu {
-    display: none;
-  }
-
-  .hamburger input[type='checkbox']:checked ~ .side_menu {
-    display: block;
-  } */
-
   .hamburger {
-    cursor: pointer;
     text-align: right;
     .side_menu {
       display: none;
