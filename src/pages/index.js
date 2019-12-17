@@ -1,9 +1,9 @@
 import React from 'react';
-import NavBar from '../components/navbar';
+import Header from '../components/header';
 
 export default () => (
   <div>
-    <NavBar />
+    <Header />
     <div>Hello world!</div>
   </div>
 );
