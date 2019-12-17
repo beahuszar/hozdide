@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default ({ children, to, external }) => {
   if (external) {
@@ -14,7 +14,9 @@ export default ({ children, to, external }) => {
 
   return (
     <li style={{ marginRight: '10px' }}>
-      <Link to={to}>{children}</Link>
+      <NavLink activeClassName="active" ac to={to}>
+        {children}
+      </NavLink>
     </li>
   );
 };

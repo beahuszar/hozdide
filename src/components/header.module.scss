@@ -1,6 +1,13 @@
 @import '../styles/global.scss';
 
 .container {
+  background-image: url('./full_logo.png');
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   .navbar {
     position: relative;
     list-style: none;
@@ -32,6 +39,22 @@
       text-align: right;
       display: none;
       right: 0;
+
+      & a {
+        color: $hozdide-grey;
+        &:link,
+        a:visited {
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: none;
+          color: $hozide-green;
+        }
+        &:active {
+          text-decoration: none;
+          color: $hozide-green;
+        }
+      }
 
       @media #{$tablet-view} {
         display: inline-flex;
