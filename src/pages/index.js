@@ -1,13 +1,16 @@
 import React from 'react';
-import { Router } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import Header from '../components/header';
+import Faq from '../components/faq';
 import history from '../history';
 
 export default () => (
   <div>
     <Router history={history}>
       <Header />
-      <div>Hello world!</div>
+      <Switch>
+        <Route path="/gyik" exact component={Faq} />
+      </Switch>
     </Router>
   </div>
 );

@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default prop => {
-  if (prop.external) {
+export default ({ children, to, external }) => {
+  if (external) {
     return (
-      <li style={{ margin: '10px' }}>
-        <a href={prop.to} target="_blank" rel="noopener noreferrer">
-          {prop.title}
+      <li style={{ marginRight: '10px' }}>
+        <a href={to} target="_blank" rel="noopener noreferrer">
+          {children}
         </a>
       </li>
     );
   }
 
   return (
-    <li style={{ margin: '10px' }}>
-      <Link to={prop.to}>{prop.title}</Link>
+    <li style={{ marginRight: '10px' }}>
+      <Link to={to}>{children}</Link>
     </li>
   );
 };

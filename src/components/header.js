@@ -13,13 +13,15 @@ export default () => (
         </label>
         <input type="checkbox" id="checkbox" />
         <div className={styles.navbar___items}>
-          <NavItem title="Kapcsolat" to="/" />
-          <NavItem title="Galéria" to="/" />
-          <NavItem title="Gyakori kérdések" to="/" />
-          <NavItem title="Szolgáltatásaink" to="/" />
-          <NavItem title="FB" to="/" external />
-          <NavItem title="IG" to="/" />
-          <NavItem title="EN" to="/" />
+          <NavItem to="/">Kapcsolat</NavItem>
+          <NavItem to="/">Galéria</NavItem>
+          <NavItem to="gyik">Gyakori kérdések</NavItem>
+          <NavItem to="/">Szolgáltatásaink</NavItem>
+          <NavItem to="https://www.facebook.com/hozdideallatorvos/" external>
+            FB
+          </NavItem>
+          <NavItem to="/">IG</NavItem>
+          <NavItem to="/">EN</NavItem>
         </div>
       </ul>
     </nav>
