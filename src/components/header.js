@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './navbar.module.scss';
+import styles from './header.module.scss';
 import NavItem from './navbarItem';
 import { FaBars, FaDog } from 'react-icons/fa';
 

@@ -5,7 +5,7 @@ export default prop => {
   if (prop.external) {
     return (
       <li style={{ margin: '10px' }}>
-        <a href={prop.to} target="_blank">
+        <a href={prop.to} target="_blank" rel="noopener noreferrer">
           {prop.title}
         </a>
       </li>
