@@ -1,26 +1,94 @@
 @import './variables.scss';
 
-// FONT START
+// FONT FAMILY
 @font-face {
   font-family: 'hozdide';
   src: url('../../static/fonts/gotham/GothamRoundedBook_21018.ttf')
     format('truetype');
 }
 
-// GLOBAL STYLES START
-html {
+// GLOBAL STYLES
+* {
   color: $hozdide-grey;
   font-family: 'hozdide';
   font-size: 21px;
+  line-height: 14px;
+  text-decoration: none;
+  letter-spacing: normal;
+  outline: medium none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: $hozdide-grey;
+  // background-color: $hozdide-red;
+
+  &:before,
+  &:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
-/* For mobile phones: */
+body {
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  border: 0;
+}
+
+a {
+  cursor: pointer;
+  color: $color-blue;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+    color: $color-blue-hover;
+  }
+
+  &:active {
+    color: $color-blue-active;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+
+  input,
+  & {
+    line-height: normal;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+  }
+}
+
+p {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+// RESPONSIVE COLUMNS
 [class*='col-'] {
+  /* For mobile phones: */
   width: 100%;
 }
 
 @media #{$tablet-view} {
-  /* For tablets: */
   .col-s-1 {
     width: 8.33%;
   }
@@ -60,7 +128,6 @@ html {
 }
 
 @media #{$desktop-view} {
-  /* For desktop: */
   .col-1 {
     width: 8.33%;
   }

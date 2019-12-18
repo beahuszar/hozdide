@@ -3,7 +3,6 @@ import { Router, Route, Switch } from 'react-router-dom';
 import Header from '../components/header';
 import Faq from '../components/faq';
 import history from '../history';
-import style from '../styles/global.scss';
 
 export default () => (
   <div>

@@ -1,8 +1,30 @@
-// COLORS
+// HOZDIDE COLORS
 $hozide-green: #06bdbb;
 $hozdide-red: #dd1d51;
 $hozdide-grey: #333438;
 
-// RESPONSIVE
+//Primary colors
+$color-red: #fe3200;
+$color-red-hover: #fe723f;
+$color-red-active: #e23c00;
+$color-red-input-error: #faf1ec;
+$color-grey-active: #363636;
+$color-white: #ffffff;
+
+//Secondary colors
+$color-blue: #268ec6;
+$color-blue-hover: #64add5;
+$color-blue-active: #0178b9;
+$color-yellow: #ffc700;
+$color-yellow-info: #fff3c9;
+$color-green: #68b960;
+
+//Neutral colors
+$color-grey: #e5e5e5;
+$color-grey-light: #efefef;
+$color-grey-dark: #202020;
+$color-grey-soft: #c3c3c3;
+
+// MEDIA QUERY BREAKPOINTS
 $tablet-view: 'only screen and (min-width: 600px)';
 $desktop-view: 'only screen and (min-width: 768px)';
