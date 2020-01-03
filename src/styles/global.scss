@@ -37,28 +37,29 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+header h1 {
+  margin: 0;
+}
+
 img {
   border: 0;
 }
 
 a {
   cursor: pointer;
-  color: $color-blue;
+  color: $hozdide-grey;
 
   &:hover,
-  &:focus {
+  &:hover path {
     text-decoration: none;
     outline: none;
-    color: $color-blue-hover;
+    color: $hozide-green;
   }
 
-  &:active {
+  &:active,
+  &:active path {
     color: $color-blue-active;
   }
-}
-
-ul {
-  list-style: none;
 }
 
 textarea {
