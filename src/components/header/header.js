@@ -38,8 +38,8 @@ export default ({ children }) => {
             <FaTimes />
           </a>
           <ul>
-            <NavItem to="/">Kapcsolat</NavItem>
             <NavItem to="/">Galéria</NavItem>
+            <NavItem to="/">Kapcsolat</NavItem>
             <NavItem to="/faq">Gyakori kérdések</NavItem>
             <NavItem to="/">Szolgáltatásaink</NavItem>
             <NavItem to="https://www.facebook.com/hozdideallatorvos/" external>
