@@ -45,8 +45,6 @@ export default ({ children }) => {
             <NavItem to="https://www.facebook.com/hozdideallatorvos/" external>
               FB
             </NavItem>
-            <NavItem to="/">IG</NavItem>
-            <NavItem to="/">EN</NavItem>
           </ul>
         </nav>
         <a
