@@ -4,6 +4,7 @@ import NavItem from './navbarItem';
 import { FaBars, FaDog, FaTimes } from 'react-icons/fa';
 
 export default ({ children }) => {
+  console.log('render');
   return (
     <div>
       <header>
