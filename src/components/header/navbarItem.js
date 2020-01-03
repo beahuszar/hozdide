@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'gatsby';
 
 export default ({ children, to, external }) => {
   if (external) {
@@ -14,9 +14,9 @@ export default ({ children, to, external }) => {
 
   return (
     <li style={{ marginRight: '10px' }}>
-      <NavLink activeClassName="active" ac to={to}>
+      <Link activeClassName="active" ac to={to}>
         {children}
-      </NavLink>
+      </Link>
     </li>
   );
 };
