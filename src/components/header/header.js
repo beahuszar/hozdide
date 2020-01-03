@@ -50,10 +50,13 @@ export default ({ children }) => {
         </nav>
         <a
           href="#main-menu-toggle"
-          class={styles.backdrop}
-          tabindex="-1"
+          className={styles.backdrop}
+          tabIndex="-1"
           hidden
-        ></a>
+          aria-label="Főmenü bezárása"
+        >
+          <span className={styles.srOnly}>Főmenü bezárása</span>
+        </a>
       </header>
       {children}
     </div>
