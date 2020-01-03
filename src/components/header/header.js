@@ -4,30 +4,6 @@ import NavItem from './navbarItem';
 import { FaBars, FaDog, FaTimes } from 'react-icons/fa';
 
 export default ({ children }) => {
-  /*        <nav>
-            <ul className={styles.navbar}>
-            <FaDog />
-            <label htmlFor="checkbox" className={styles.navbar___hamburger}>
-              <FaBars />
-            </label>
-            <input type="checkbox" id="checkbox" />
-            <div className={styles.navbar___items}>
-              <NavItem to="/">Kapcsolat</NavItem>
-              <NavItem to="/">Galéria</NavItem>
-              <NavItem to="/faq">Gyakori kérdések</NavItem>
-              <NavItem to="/">Szolgáltatásaink</NavItem>
-              <NavItem
-                to="https://www.facebook.com/hozdideallatorvos/"
-                external
-              >
-                FB
-              </NavItem>
-              <NavItem to="/">IG</NavItem>
-              <NavItem to="/">EN</NavItem>
-            </div>
-          </ul>
-        </nav>
-*/
   return (
     <div>
       <header>
@@ -44,6 +20,7 @@ export default ({ children }) => {
             href="#main-menu"
             id="main-menu-toggle"
             aria-label="Főmenü megnyitása"
+            className={styles.menuToggle}
           >
             <span className={styles.srOnly}>Főmenü megnyitása</span>
             <FaBars aria-hidden="true" />

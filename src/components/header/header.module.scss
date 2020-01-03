@@ -2,7 +2,7 @@
 
 header {
   background-image: url('./full_logo.png');
-  height: 300px;
+  height: 350px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,6 +12,8 @@ header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin: 0 1rem;
+    padding-top: 1rem;
   }
 
   // Screen reader only
@@ -24,6 +26,15 @@ header {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+  }
+
+  @media #{$desktop-view} {
+    display: flex;
+    justify-content: space-between;
+
+    .menu-toggle {
+      display: none;
+    }
   }
 
   .main-menu {
@@ -71,6 +82,36 @@ header {
         z-index: 998;
         background: rgba(0, 0, 0, 0.85);
         cursor: pointer;
+      }
+    }
+
+    @media #{$desktop-view} {
+      position: static;
+      display: block;
+
+      ul {
+        padding: 0;
+        height: auto;
+        width: auto;
+        background: none;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          display: inline-block;
+          margin: 1rem;
+        }
+      }
+      .menu-close {
+        display: none;
+      }
+
+      &:target {
+        & + .backdrop {
+          display: none;
+        }
       }
     }
   }
