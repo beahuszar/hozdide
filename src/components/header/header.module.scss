@@ -57,14 +57,18 @@ header {
       padding: 2.5rem 1rem;
       text-align: right;
       li {
-        padding-bottom: 1rem;
+        padding-top: 1rem;
+
+        & > a {
+          display: block;
+        }
       }
     }
 
     & .menu-close {
       position: absolute;
-      right: 0;
-      top: 0;
+      right: 1rem;
+      top: 1rem;
     }
 
     &:target {
@@ -102,6 +106,7 @@ header {
         li {
           display: inline-block;
           margin: 1rem;
+          padding: 0;
         }
       }
       .menu-close {
