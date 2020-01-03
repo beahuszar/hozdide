@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.cover-photo {
+  background-image: url('./probakep.jpg');
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

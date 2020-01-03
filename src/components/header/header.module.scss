@@ -1,19 +1,14 @@
 @import '../../styles/variables.scss';
 
 header {
-  background-image: url('./full_logo.png');
-  height: 350px;
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  background: $hozdide-grey;
+  line-height: 50%;
   .row {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 0 1rem;
-    padding-top: 1rem;
+    padding: 1rem;
   }
 
   // Screen reader only
