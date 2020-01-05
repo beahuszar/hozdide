@@ -35,13 +35,12 @@ header {
 
   .main-menu {
     position: fixed;
-    display: none;
-    right: -200px;
+    // display: none;
     top: 0;
     height: 100%;
     overflow-y: auto;
     overflow-x: visible;
-    transition: right 3s cubic-bezier(1, 0.38, 0.45, 0.94);
+    transition: right 0.3s ease-in;
     z-index: 999;
 
     ul {
@@ -69,7 +68,6 @@ header {
 
     &:target {
       display: block;
-      right: 0;
       outline: none;
 
       & + .backdrop {
