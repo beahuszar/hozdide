@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './header.module.scss';
 import NavItem from './navbarItem';
 import { FaBars, FaDog, FaTimes } from 'react-icons/fa';
 
 export default ({ children }) => {
-  console.log('render');
+  const [active, setActive] = useState(false);
+  const mobileNavRef = useRef(null);
+
+  useEffect(() => {
+    // TODO: check alternative solution
+    mobileNavRef.current.style.right = active ? 0 : '-500px';
+  }, [mobileNavRef, active]);
+
+  const toggleActive = () => {
+    setActive(!active);
+  };
+
   return (
     <div>
       <header>
@@ -24,10 +35,15 @@ export default ({ children }) => {
             className={styles.menuToggle}
           >
             <span className={styles.srOnly}>Főmenü megnyitása</span>
-            <FaBars aria-hidden="true" />
+            <FaBars aria-hidden="true" onClick={toggleActive} />
           </a>
         </div>
-        <nav id="main-menu" className={styles.mainMenu} aria-label="Főmenü">
+        <nav
+          ref={mobileNavRef}
+          id="main-menu"
+          className={styles.mainMenu}
+          aria-label="Főmenü"
+        >
           <a
             href="#main-menu-toggle"
             id="main-menu-close"
@@ -35,7 +51,7 @@ export default ({ children }) => {
             aria-label="Főmenü bezárása"
           >
             <span className={styles.srOnly}>Főmenü bezárása</span>
-            <FaTimes />
+            <FaTimes onClick={toggleActive} />
           </a>
           <ul>
             <NavItem to="/">Galéria</NavItem>
@@ -53,6 +69,7 @@ export default ({ children }) => {
           tabIndex="-1"
           hidden
           aria-label="Főmenü bezárása"
+          onClick={toggleActive}
         >
           <span className={styles.srOnly}>Főmenü bezárása</span>
         </a>
