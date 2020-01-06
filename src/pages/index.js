@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header/header';
 import CoverPhoto from '../components/coverphoto/coverphoto';
-import Toggle from '../components/toggle/toggle';
+import Accordion from '../components/accordion/accordion';
 import { graphql } from 'gatsby';
 
 export default ({ data }) => {
@@ -9,7 +9,7 @@ export default ({ data }) => {
     <div>
       <Header />
       <CoverPhoto />
-      <Toggle
+      <Accordion
         title="A kis listam"
         definitions={data.site.siteMetadata.ourServices}
       />
