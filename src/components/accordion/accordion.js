@@ -1,24 +1,41 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import s from './accordion.module.scss';
 
-const listDefinitions = definitions => {
+const useDefinitions = definitions => {
+  const [active, setActive] = useState(false);
+  const definitionDescriptionRef = useRef(null);
+
+  useEffect(() => {
+    console.log(definitionDescriptionRef.current.style.maxheight);
+    definitionDescriptionRef.current.style.maxHeight = active
+      ? `${definitionDescriptionRef.current.scrollHeight}px`
+      : '0px';
+  }, [definitionDescriptionRef, active]);
+
+  const toggleActive = () => {
+    setActive(!active);
+  };
+
   if (typeof definitions !== 'undefined') {
     return definitions.map(definition => (
-      <div key={definition.title}>
-        <dt>{definition.title}</dt>
-        <dd>{definition.description}</dd>
-      </div>
+      <li key={definition.title} className={s.definitionSection}>
+        <a onClick={toggleActive}>{definition.title}</a>
+        <article ref={definitionDescriptionRef}>
+          {definition.description}
+        </article>
+      </li>
     ));
   }
   return <div>nincs meg semmi sm</div>;
 };
 
 const Toggle = props => {
-  const definitions = listDefinitions(props.definitions);
+  const definitions = useDefinitions(props.definitions);
 
   return (
-    <section>
+    <section className={s.accordionSection}>
       <h2>{props.title}</h2>
-      <dl>{definitions}</dl>
+      <ul>{definitions}</ul>
     </section>
   );
 };

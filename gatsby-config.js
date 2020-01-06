@@ -9,7 +9,8 @@ module.exports = {
     ourServices: [
       {
         title: 'Winston',
-        description: 'Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf',
+        description:
+          'Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf',
       },
       {
         title: 'Penny',

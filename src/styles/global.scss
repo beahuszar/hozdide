@@ -9,7 +9,6 @@
 
 // GLOBAL STYLES
 * {
-  color: $hozdide-grey;
   font-family: 'Raleway', sans-serif;
   font-size: 21px;
   line-height: 14px;
@@ -32,6 +31,7 @@
 }
 
 body {
+  color: $hozdide-grey;
   margin: 0;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
