@@ -8,7 +8,7 @@ const useDefinitions = definitions => {
       <AccordionItem definition={definition} s={s} key={definition.title} />
     ));
   }
-  return <div>nincs meg semmi sm</div>;
+  return <div>no items to render</div>;
 };
 
 const Accordion = props => {
