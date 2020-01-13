@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import s from './accordion.module.scss';
 
-const AccordionItem = ({ definition, s }) => {
+const AccordionItem = ({ accordionItem, s }) => {
   const [active, setActive] = useState(false);
   const definitionDescriptionRef = useRef(null);
 
@@ -14,10 +13,15 @@ const AccordionItem = ({ definition, s }) => {
   const toggleActive = () => {
     setActive(!active);
   };
+
   return (
     <li className={s.definitionSection}>
-      <a onClick={toggleActive}>{definition.title}</a>
-      <article ref={definitionDescriptionRef}>{definition.description}</article>
+      <a onClick={toggleActive} href={`#${accordionItem.title}`}>
+        {accordionItem.title}
+      </a>
+      <article ref={definitionDescriptionRef} id={accordionItem.title}>
+        {accordionItem.description}
+      </article>
     </li>
   );
 };
