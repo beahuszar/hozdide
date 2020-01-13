@@ -13,6 +13,7 @@ const AccordionItem = ({ accordionItem, s }) => {
   const toggleActive = () => {
     setActive(!active);
   };
+
   return (
     <li className={s.definitionSection}>
       <a onClick={toggleActive} href={`#${accordionItem.title}`}>
