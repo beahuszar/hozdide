@@ -1,0 +1,14 @@
+# Gatsby is built with Node.js
+language: node_js
+node_js:
+  - '12.1'
+
+# The build’s virtual environment is in Ubuntu 14.0
+dist: trusty
+
+# The virtual environment should be a container
+# not a full virtual machine
+sudo: false
+# Default values
+# install: npm install
+# script: npm test
