@@ -8,28 +8,34 @@ module.exports = {
   siteMetadata: {
     ourServices: [
       {
-        title: 'Winston',
+        title: 'Szolgáltatás 1',
         description:
-          'Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf Fekete macska aoisjifj sdijodfijsdoi sdoifjdfoidsjf',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at egestas dolor. Duis id felis nulla. Donec in odio tellus. Integer sodales semper velit non semper. In dignissim eleifend porttitor. Suspendisse potenti. Nam ullamcorper vehicula justo, nec fermentum libero pulvinar vitae. Pellentesque viverra sagittis blandit. Mauris finibus, lectus at eleifend imperdiet, arcu diam aliquet justo, nec vehicula massa tellus at nisi. Mauris nec imperdiet magna, eget tristique enim. Ut posuere erat a commodo ultrices.',
       },
       {
-        title: 'Penny',
-        description: 'Cirmos macska dsiufhisduhfisud sdiufhsidufh sdiufhsidufh',
+        title: 'Szolgáltatás 2',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at egestas dolor. Duis id felis nulla. Donec in odio tellus. Integer sodales semper velit non semper. In dignissim eleifend porttitor. Suspendisse potenti. Nam ullamcorper vehicula justo, nec fermentum libero pulvinar vitae. Pellentesque viverra sagittis blandit. Mauris finibus, lectus at eleifend imperdiet, arcu diam aliquet justo, nec vehicula massa tellus at nisi. Mauris nec imperdiet magna, eget tristique enim. Ut posuere erat a commodo ultrices.',
       },
       {
-        title: 'Kandz',
+        title: 'Szolgáltatás 3',
         description:
-          'sdoifdoijf sdoijfsodifjds sdoijfdsoifj sdoifjdosifj sdofijdoif',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at egestas dolor. Duis id felis nulla. Donec in odio tellus. Integer sodales semper velit non semper. In dignissim eleifend porttitor. Suspendisse potenti. Nam ullamcorper vehicula justo, nec fermentum libero pulvinar vitae. Pellentesque viverra sagittis blandit. Mauris finibus, lectus at eleifend imperdiet, arcu diam aliquet justo, nec vehicula massa tellus at nisi. Mauris nec imperdiet magna, eget tristique enim. Ut posuere erat a commodo ultrices.',
       },
       {
-        title: 'Kitty',
+        title: 'Szolgáltatás 4',
         description:
-          'sdifiuhfiaosufh asdliufhadsiofuh asdiufhadsiofuh asdiufhdisfu',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at egestas dolor. Duis id felis nulla. Donec in odio tellus. Integer sodales semper velit non semper. In dignissim eleifend porttitor. Suspendisse potenti. Nam ullamcorper vehicula justo, nec fermentum libero pulvinar vitae. Pellentesque viverra sagittis blandit. Mauris finibus, lectus at eleifend imperdiet, arcu diam aliquet justo, nec vehicula massa tellus at nisi. Mauris nec imperdiet magna, eget tristique enim. Ut posuere erat a commodo ultrices.',
       },
       {
-        title: 'megegy',
+        title: 'Szolgáltatás 5',
         description:
-          'sdifiuhfiaosufh asdliufhadsiofuh asdiufhadsiofuh asdiufhdisfu',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at egestas dolor. Duis id felis nulla. Donec in odio tellus. Integer sodales semper velit non semper. In dignissim eleifend porttitor. Suspendisse potenti. Nam ullamcorper vehicula justo, nec fermentum libero pulvinar vitae. Pellentesque viverra sagittis blandit. Mauris finibus, lectus at eleifend imperdiet, arcu diam aliquet justo, nec vehicula massa tellus at nisi. Mauris nec imperdiet magna, eget tristique enim. Ut posuere erat a commodo ultrices.',
+      },
+      {
+        title: 'Szolgáltatás 6',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at egestas dolor. Duis id felis nulla. Donec in odio tellus. Integer sodales semper velit non semper. In dignissim eleifend porttitor. Suspendisse potenti. Nam ullamcorper vehicula justo, nec fermentum libero pulvinar vitae. Pellentesque viverra sagittis blandit. Mauris finibus, lectus at eleifend imperdiet, arcu diam aliquet justo, nec vehicula massa tellus at nisi. Mauris nec imperdiet magna, eget tristique enim. Ut posuere erat a commodo ultrices.',
       },
     ],
   },

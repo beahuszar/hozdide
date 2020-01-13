@@ -10,8 +10,8 @@ export default ({ data }) => {
       <Header />
       <CoverPhoto />
       <Accordion
-        title="A kis listam"
-        definitions={data.site.siteMetadata.ourServices}
+        title="Szolgáltatásaink"
+        accordionItems={data.site.siteMetadata.ourServices}
       />
     </div>
   );
