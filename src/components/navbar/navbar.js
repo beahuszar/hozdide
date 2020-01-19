@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './navbar.module.scss';
 import NavItem from './navbarItem';
+import CoverPhoto from '../coverphoto/coverphoto';
 import { FaBars, FaDog, FaTimes } from 'react-icons/fa';
 
 export default ({ children }) => {
@@ -74,7 +75,7 @@ export default ({ children }) => {
           <span className={styles.srOnly}>Főmenü bezárása</span>
         </a>
       </header>
-      {children}
+      <CoverPhoto />
     </div>
   );
 };
