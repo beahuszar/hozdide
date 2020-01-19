@@ -7,6 +7,7 @@ const Map = () => {
       height="450"
       frameBorder="0"
       style={{ width: 100 + '%' }}
+      title="Rendelo cime"
     ></iframe>
   );
 };
