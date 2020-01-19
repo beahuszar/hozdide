@@ -17,7 +17,7 @@ const renderAccordionItems = accordionItems => {
 
 const Accordion = ({ title, accordionItems }) => {
   return (
-    <section className={s.accordionSection}>
+    <section className={`${s.accordionSection} col-8`}>
       <h2>{title}</h2>
       <ul>{renderAccordionItems(accordionItems)}</ul>
     </section>
