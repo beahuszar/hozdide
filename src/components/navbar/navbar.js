@@ -57,7 +57,7 @@ export default ({ children }) => {
             <NavItem to="/">Galéria</NavItem>
             <NavItem to="/">Kapcsolat</NavItem>
             <NavItem to="/faq">Gyakori kérdések</NavItem>
-            <NavItem to="/">Szolgáltatásaink</NavItem>
+            <NavItem to="/szolgaltatasok">Szolgáltatásaink</NavItem>
             <NavItem to="https://www.facebook.com/hozdideallatorvos/" external>
               FB
             </NavItem>
