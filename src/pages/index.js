@@ -1,10 +1,6 @@
 import React from 'react';
-import Navbar from '../components/navbar/navbar';
+import Layout from '../components/layout/layout';
 
 export default ({ data }) => {
-  return (
-    <div>
-      <Navbar />
-    </div>
-  );
+  return <Layout>FOOLDAL</Layout>;
 };

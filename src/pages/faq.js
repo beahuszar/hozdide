@@ -1,17 +1,16 @@
 import React from 'react';
-import Navbar from '../components/navbar/navbar';
 import Accordion from '../components/accordion/accordion';
 import { graphql } from 'gatsby';
+import Layout from '../components/layout/layout';
 
 export default ({ data }) => {
   return (
-    <div>
-      <Navbar />
+    <Layout>
       <Accordion
         title="Gyakori kérdések"
         accordionItems={data.site.siteMetadata.faq}
       />
-    </div>
+    </Layout>
   );
 };
 
