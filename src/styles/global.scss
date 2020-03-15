@@ -1,11 +1,11 @@
 @import './variables.scss';
 
-// FONT FAMILY
+/* // FONT FAMILY
 @font-face {
   font-family: 'hozdide';
   src: url('../../static/fonts/gotham/GothamRoundedBook_21018.ttf')
     format('truetype');
-}
+} */
 
 // GLOBAL STYLES
 * {
@@ -19,8 +19,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: $hozdide-grey;
-  // background-color: $hozdide-red;
 
   &:before,
   &:after {
@@ -31,11 +29,9 @@
 }
 
 body {
-  color: $hozdide-grey;
   margin: 0;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: $color-beige;
 }
 
 header {
@@ -58,7 +54,7 @@ img {
 
 a {
   cursor: pointer;
-  color: $color-beige;
+  color: black;
 
   &:hover,
   &:hover path {
@@ -92,10 +88,6 @@ textarea {
 p {
   margin: 20px 0;
   padding: 0 20px;
-}
-
-path {
-  color: $color-beige;
 }
 
 // RESPONSIVE COLUMNS

@@ -2,7 +2,13 @@ import React, { useState, useRef, useEffect } from 'react';
 import styles from './navbar.module.scss';
 import NavItem from './navbarItem';
 import CoverPhoto from '../coverphoto/coverphoto';
-import { FaBars, FaDog, FaTimes } from 'react-icons/fa';
+import {
+  FaBars,
+  FaDog,
+  FaTimes,
+  FaFacebookF,
+  FaMapMarkerAlt,
+} from 'react-icons/fa';
 
 export default ({ children }) => {
   const [active, setActive] = useState(false);
@@ -25,7 +31,7 @@ export default ({ children }) => {
             <h1>
               <a href="/" aria-label="Ugrás főoldalra">
                 <span className={styles.srOnly}>Ugrás főoldalra</span>
-                <FaDog aria-hidden="true" />
+                <img src="small_logo.png" className={styles.logo} />
               </a>
             </h1>
           </div>
@@ -55,13 +61,16 @@ export default ({ children }) => {
             <FaTimes onClick={toggleActive} />
           </a>
           <ul>
-            <NavItem to="/">Galéria</NavItem>
-            <NavItem to="/">Kapcsolat</NavItem>
-            <NavItem to="/faq">Gyakori kérdések</NavItem>
             <NavItem to="/szolgaltatasok">Szolgáltatásaink</NavItem>
-            <NavItem to="https://www.facebook.com/hozdideallatorvos/" external>
-              FB
+            <NavItem to="/">A Rendelőről</NavItem>
+            <NavItem to="/">Galéria</NavItem>
+            <NavItem to="/" external>
+              <FaMapMarkerAlt></FaMapMarkerAlt>
             </NavItem>
+            <NavItem to="https://www.facebook.com/hozdideallatorvos/" external>
+              <FaFacebookF></FaFacebookF>
+            </NavItem>
+            <NavItem to="/">Kapcsolat</NavItem>
           </ul>
         </nav>
         <a

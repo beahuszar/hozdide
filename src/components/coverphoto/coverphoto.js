@@ -4,7 +4,8 @@ import styles from './coverphoto.module.scss';
 export default () => {
   return (
     <div className={styles.coverPhoto}>
-      <h1>Hozd Ide! Állatorvosi Rendelő</h1>
+      <img src="probakep2.png" />
+      <h1>Hozd Ide! Allatorvosi rendelo</h1>
     </div>
   );
 };
