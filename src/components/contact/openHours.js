@@ -17,7 +17,7 @@ const OpenHours = () => {
   `).site.siteMetadata.openHours;
 
   return (
-    <table>
+    <table className="col-">
       <thead>
         <tr>
           <th></th>
@@ -27,7 +27,7 @@ const OpenHours = () => {
       </thead>
       <tbody>
         {openHrs.map(row => (
-          <tr>
+          <tr key={row.day}>
             <th>{row.day}</th>
             <td>{row.morning}</td>
             <td>{row.afternoon}</td>

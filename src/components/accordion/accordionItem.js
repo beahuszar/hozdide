@@ -15,14 +15,16 @@ const AccordionItem = ({ accordionItem, s }) => {
   };
 
   return (
-    <li className={s.definitionSection}>
-      <a onClick={toggleActive} href={`#${accordionItem.title}`}>
-        {accordionItem.title}
-      </a>
-      <article ref={definitionDescriptionRef} id={accordionItem.title}>
-        {accordionItem.description}
-      </article>
-    </li>
+    <>
+      <li className={s.definitionSection} id={accordionItem.title}>
+        <a onClick={toggleActive} href={`#${accordionItem.title}`}>
+          {accordionItem.title}
+        </a>
+        <article ref={definitionDescriptionRef}>
+          {accordionItem.description}
+        </article>
+      </li>
+    </>
   );
 };
 
