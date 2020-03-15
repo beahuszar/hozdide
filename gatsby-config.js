@@ -72,27 +72,7 @@ module.exports = {
     ],
     openHours: [
       {
-        day: 'Hétfő',
-        morning: '10:00 - 12:00',
-        afternoon: '16:00 - 20:00',
-      },
-      {
-        day: 'Kedd',
-        morning: '10:00 - 12:00',
-        afternoon: '16:00 - 20:00',
-      },
-      {
-        day: 'Szerda',
-        morning: '10:00 - 12:00',
-        afternoon: '16:00 - 20:00',
-      },
-      {
-        day: 'Csütörtök',
-        morning: '10:00 - 12:00',
-        afternoon: '16:00 - 20:00',
-      },
-      {
-        day: 'Péntek',
+        day: 'Hétfő - Péntek',
         morning: '10:00 - 12:00',
         afternoon: '16:00 - 20:00',
       },

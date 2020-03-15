@@ -17,12 +17,13 @@ const OpenHours = () => {
   `).site.siteMetadata.openHours;
 
   return (
-    <table className="col-">
+    <table>
       <thead>
+        <h3>Nyitvatartás</h3>
         <tr>
           <th></th>
-          <th>Delelott</th>
-          <th>Delutan</th>
+          <th>Délelott</th>
+          <th>Délután</th>
         </tr>
       </thead>
       <tbody>

@@ -2,13 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import styles from './navbar.module.scss';
 import NavItem from './navbarItem';
 import CoverPhoto from '../coverphoto/coverphoto';
-import {
-  FaBars,
-  FaDog,
-  FaTimes,
-  FaFacebookF,
-  FaMapMarkerAlt,
-} from 'react-icons/fa';
+import { FaBars, FaTimes, FaFacebookF, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default ({ children }) => {
   const [active, setActive] = useState(false);
@@ -31,7 +25,11 @@ export default ({ children }) => {
             <h1>
               <a href="/" aria-label="Ugrás főoldalra">
                 <span className={styles.srOnly}>Ugrás főoldalra</span>
-                <img src="small_logo.png" className={styles.logo} />
+                <img
+                  src="images/small_logo.png"
+                  className={styles.logo}
+                  alt="logo"
+                />
               </a>
             </h1>
           </div>
