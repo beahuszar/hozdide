@@ -1,17 +1,50 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './navbar.module.scss';
 import NavItem from './navbarItem';
 import CoverPhoto from '../introductionSection/introductionSection';
-import { FaBars, FaTimes, FaFacebookF, FaMapMarkerAlt } from 'react-icons/fa';
+import HamburgerMenu from './hamburgerMenu';
+import MobileMenuCloseButton from './mobileMenuCloseButton';
+import MobileMenuCloseArea from './mobileMenuCloseArea';
+import { FaFacebookF, FaMapMarkerAlt } from 'react-icons/fa';
 
-export default ({ children }) => {
+const renderLogo = () => {
+  return (
+    <div className={styles.logo}>
+      <h1>
+        <a href="/" aria-label="Ugrás főoldalra">
+          <span className={styles.srOnly}>Ugrás főoldalra</span>
+          <img src="images/small_logo.png" className={styles.logo} alt="logo" />
+        </a>
+      </h1>
+    </div>
+  );
+};
+
+const renderNavMenuItems = () => {
+  return (
+    <ul>
+      <NavItem to="/szolgaltatasok">Szolgáltatásaink</NavItem>
+      <NavItem to="/">A Rendelőről</NavItem>
+      <NavItem to="/">Galéria</NavItem>
+      <NavItem to="/" external>
+        <FaMapMarkerAlt></FaMapMarkerAlt>
+      </NavItem>
+      <NavItem to="https://www.facebook.com/hozdideallatorvos/" external>
+        <FaFacebookF></FaFacebookF>
+      </NavItem>
+      <NavItem to="/">Kapcsolat</NavItem>
+    </ul>
+  );
+};
+
+const Navbar = ({ children }) => {
   const [active, setActive] = useState(false);
-  const mobileNavRef = useRef(null);
+  const [mobileMenuVisibility, setMobileMenuVisibility] = useState('-500px');
 
   useEffect(() => {
-    // TODO: check alternative solution
-    mobileNavRef.current.style.right = active ? 0 : '-500px';
-  }, [mobileNavRef, active]);
+    const positionRight = active ? '0' : '-500px';
+    setMobileMenuVisibility(positionRight);
+  }, [active]);
 
   const toggleActive = () => {
     setActive(!active);
@@ -21,68 +54,23 @@ export default ({ children }) => {
     <div>
       <header>
         <div className={styles.row}>
-          <div className={styles.logo}>
-            <h1>
-              <a href="/" aria-label="Ugrás főoldalra">
-                <span className={styles.srOnly}>Ugrás főoldalra</span>
-                <img
-                  src="images/small_logo.png"
-                  className={styles.logo}
-                  alt="logo"
-                />
-              </a>
-            </h1>
-          </div>
-          <a
-            href="#main-menu"
-            id="main-menu-toggle"
-            aria-label="Főmenü megnyitása"
-            className={styles.menuToggle}
-          >
-            <span className={styles.srOnly}>Főmenü megnyitása</span>
-            <FaBars aria-hidden="true" onClick={toggleActive} />
-          </a>
+          {renderLogo()}
+          <HamburgerMenu onToggle={toggleActive} />
         </div>
         <nav
-          ref={mobileNavRef}
+          style={{ right: `${mobileMenuVisibility}` }}
           id="main-menu"
           className={styles.mainMenu}
           aria-label="Főmenü"
         >
-          <a
-            href="#main-menu-toggle"
-            id="main-menu-close"
-            className={styles.menuClose}
-            aria-label="Főmenü bezárása"
-          >
-            <span className={styles.srOnly}>Főmenü bezárása</span>
-            <FaTimes onClick={toggleActive} />
-          </a>
-          <ul>
-            <NavItem to="/szolgaltatasok">Szolgáltatásaink</NavItem>
-            <NavItem to="/">A Rendelőről</NavItem>
-            <NavItem to="/">Galéria</NavItem>
-            <NavItem to="/" external>
-              <FaMapMarkerAlt></FaMapMarkerAlt>
-            </NavItem>
-            <NavItem to="https://www.facebook.com/hozdideallatorvos/" external>
-              <FaFacebookF></FaFacebookF>
-            </NavItem>
-            <NavItem to="/">Kapcsolat</NavItem>
-          </ul>
+          <MobileMenuCloseButton onToggle={toggleActive} />
+          {renderNavMenuItems()}
         </nav>
-        <a
-          href="#main-menu-toggle"
-          className={styles.backdrop}
-          tabIndex="-1"
-          hidden
-          aria-label="Főmenü bezárása"
-          onClick={toggleActive}
-        >
-          <span className={styles.srOnly}>Főmenü bezárása</span>
-        </a>
+        <MobileMenuCloseArea onToggle={toggleActive} />
       </header>
       <CoverPhoto />
     </div>
   );
 };
+
+export default Navbar;
