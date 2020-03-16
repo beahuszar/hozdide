@@ -17,25 +17,27 @@ const OpenHours = () => {
   `).site.siteMetadata.openHours;
 
   return (
-    <table>
-      <thead>
-        <h3>Nyitvatartás</h3>
-        <tr>
-          <th></th>
-          <th>Délelott</th>
-          <th>Délután</th>
-        </tr>
-      </thead>
-      <tbody>
-        {openHrs.map(row => (
-          <tr key={row.day}>
-            <th>{row.day}</th>
-            <td>{row.morning}</td>
-            <td>{row.afternoon}</td>
+    <>
+      <h3>Nyitvatartás</h3>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Délelott</th>
+            <th>Délután</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {openHrs.map(row => (
+            <tr key={row.day}>
+              <th>{row.day}</th>
+              <td>{row.morning}</td>
+              <td>{row.afternoon}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
   );
 };
 
