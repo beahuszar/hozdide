@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './navbar.module.scss';
 import NavItem from './navbarItem';
-import CoverPhoto from '../coverphoto/coverphoto';
+import CoverPhoto from '../introductionSection/introductionSection';
 import { FaBars, FaTimes, FaFacebookF, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default ({ children }) => {
