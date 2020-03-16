@@ -1,6 +1,11 @@
 import React from 'react';
 import Layout from '../components/layout/layout';
+import ContactSection from '../components/contactSection/contactSection';
 
 export default ({ data }) => {
-  return <Layout>FOOLDAL</Layout>;
+  return (
+    <Layout>
+      <ContactSection />
+    </Layout>
+  );
 };

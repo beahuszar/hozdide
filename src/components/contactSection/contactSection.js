@@ -1,8 +1,8 @@
 import React from 'react';
-import Map from '../contact/map';
-import OpenHours from '../contact/openHours';
-import ContactInfo from '../contact/contactInfo';
-import s from './footer.module.scss';
+import Map from './map';
+import OpenHours from './openHours';
+import ContactInfo from './contactInfo';
+import s from './contactsection.module.scss';
 
 const Footer = () => {
   return (
